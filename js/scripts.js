@@ -1,10 +1,11 @@
 $(document).ready(function(){
-const animal = $("input:radio[name=animal]:checked").val();
-  
+  const animal = prompt(" Choose an animal cat, jirafa or kiwi");
 
-if (catch.checked) {
+  if (animal === "cat"){
     $("#cat").show();
-  // } else if (animal === "jirafa") {
-  //   $("#")
-  // }
+  } else if (animal === "jirafa"){
+    $("#jirafa").show();
+  } else {
+    $("#kiwi").show();
+  }
 });
